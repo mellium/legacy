@@ -1,0 +1,14 @@
+image: freebsd/latest
+packages:
+  - go
+sources:
+  - https://git.sr.ht/~samwhited/legacy
+tasks:
+  - setup: |
+      go version
+      go env
+
+      echo 'export PATH=$(go env GOPATH)/bin:$PATH' >> ~/.buildenv
+  - stable: |
+      cd legacy/
+      go test -v -cover ./...
