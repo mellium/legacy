@@ -23,6 +23,13 @@ As a general rule, no new functionality will be added to this package, this is
 just a place to put existing functionality that previously existed in
 [`mellium.im/xmpp`] that wasn't quite ready to be completely retired.
 
+## Compatibility
+
+This module does not follow any sort of backwards compatibility promise.
+We will attempt to follow semver and keep the API backwards compatible on a
+best-effort basis, but changes may be made at any time to fix bugs or make the
+API easier to use.
+
 
 ## License
 
