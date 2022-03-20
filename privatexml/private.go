@@ -2,11 +2,11 @@
 // Use of this source code is governed by the BSD 2-clause
 // license that can be found in the LICENSE file.
 
-// Package privatexml implements the legacy private XML storage system.
+// Package privatexml implements storage of arbitrary data on the server.
 //
-// It can be used to store and retrieve snippets of XML on the server. New uses
-// of this package should likely use PEP instead.
-package privatexml
+// New uses of this package should likely use mellium.im/xmpp/pubsub instead
+// unless backwards compatibility with other legacy specifications is desired.
+package privatexml // import "mellium.im/legacy/privatexml"
 
 import (
 	"context"
