@@ -30,9 +30,11 @@ tasks:
       go version
       go env
 
-      go install honnef.co/go/tools/cmd/staticcheck@latest
+      # Temporarily build from a branch due to issues with the latest release
+      # and Go 1.18.
+      go install honnef.co/go/tools/cmd/staticcheck@master
       go install github.com/securego/gosec/v2/cmd/gosec@latest
-      go install git.sr.ht/~samwhited/checkdoc@latest
+      go install git.sr.ht/~samwhited/checkdoc@main
       go install mellium.im/checkmd@latest
 
       echo 'export PATH=$(go env GOPATH)/bin:$PATH' >> ~/.buildenv
