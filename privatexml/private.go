@@ -83,6 +83,9 @@ func GetIQ(ctx context.Context, iq stanza.IQ, s *xmpp.Session, name xml.Name) (x
 		return nil, err
 	}
 	tok, err := resp.Token()
+	if err != nil {
+		return nil, err
+	}
 	start, ok := tok.(xml.StartElement)
 	if !ok {
 		/* #nosec */
@@ -97,6 +100,9 @@ func GetIQ(ctx context.Context, iq stanza.IQ, s *xmpp.Session, name xml.Name) (x
 	}
 
 	tok, err = resp.Token()
+	if err != nil {
+		return nil, err
+	}
 	start, ok = tok.(xml.StartElement)
 	if !ok || start.Name.Space != NS || start.Name.Local != "query" {
 		/* #nosec */
