@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	mellium.im/xmlstream v0.15.4-0.20211023152852-0ca80a938137
-	mellium.im/xmpp v0.21.1
+	mellium.im/xmpp v0.21.2
 )
 
 require (
