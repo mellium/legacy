@@ -1,6 +1,7 @@
 # Legacy XMPP
 
-[![GoDoc](https://godoc.org/mellium.im/legacy?status.svg)][docs]
+[![Issue Tracker][badge]](https://mellium.im/issue)
+[![Docs](https://pkg.go.dev/badge/mellium.im/legacy)](https://pkg.go.dev/mellium.im/legacy)
 [![Chat](https://img.shields.io/badge/XMPP-users@mellium.chat-orange.svg)](https://mellium.chat)
 [![License](https://img.shields.io/badge/license-FreeBSD-blue.svg)](https://opensource.org/licenses/BSD-2-Clause)
 
@@ -41,7 +42,7 @@ in the work by you shall be licensed as above, without any additional terms or
 conditions.
 
 
-[docs]: https://pkg.go.dev/mellium.im/legacy
+[badge]: https://img.shields.io/badge/style-mellium%2fxmpp-green.svg?longCache=true&style=popout-square&label=issues
 [`mellium.im/xmpp`]: https://mellium.im/xmpp/
 [CONTRIBUTING.md]: https://mellium.im/docs/CONTRIBUTING
-[LICENSE]: https://github.com/mellium/legacy/blob/main/LICENSE
+[LICENSE]: https://codeberg.org/mellium/xmpp/src/branch/main/LICENSE
