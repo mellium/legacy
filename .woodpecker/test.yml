@@ -1,6 +1,8 @@
 pipeline:
   info: &info
     image: golang:${GO_VERSION}-alpine
+    environment:
+      CGO_ENABLED: "0"
     commands:
       - go version
       - go env

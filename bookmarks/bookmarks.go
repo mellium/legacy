@@ -11,7 +11,7 @@
 // using different specs.
 // If you are implementing a client from scratch, or have the option of
 // updating, you should use the mellium.im/xmpp/bookmarks package instead.
-package bookmarks
+package bookmarks // import "mellium.im/legacy/bookmarks"
 
 import (
 	"context"
